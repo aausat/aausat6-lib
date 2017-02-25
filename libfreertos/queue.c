@@ -75,12 +75,12 @@ all the API functions to use the MPU wrappers.  That should only be done when
 task.h is included from an application file. */
 #define MPU_WRAPPERS_INCLUDED_FROM_API_FILE
 
-#include "FreeRTOS.h"
-#include "task.h"
-#include "queue.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
+#include <freertos/queue.h>
 
 #if ( configUSE_CO_ROUTINES == 1 )
-	#include "croutine.h"
+	#include <freertos/croutine.h>
 #endif
 
 /* Lint e961 and e750 are suppressed as a MISRA exception justified because the
