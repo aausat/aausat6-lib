@@ -13,4 +13,7 @@ SOURCES += queue.c
 SOURCES += tasks.c
 SOURCES += timers.c
 
+# Dir relative to SW root
+SW_DIR = ../../
+
 include ../../build/libgeneric.mk
