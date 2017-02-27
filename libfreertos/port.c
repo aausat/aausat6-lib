@@ -473,12 +473,16 @@ uint8_t ucHighByte, ucLowByte;
 	 * the context is saved at the start of vPortYieldFromTick().  The tick
 	 * count is incremented after the context is saved.
 	 */
-	void SIG_OUTPUT_COMPARE1A( void ) __attribute__ ( ( signal, naked ) );
-	void SIG_OUTPUT_COMPARE1A( void )
+	/* --- AAUSAT SPECIFIC --- */
+	//void SIG_OUTPUT_COMPARE1A( void ) __attribute__ ( ( signal, naked ) );
+	//void SIG_OUTPUT_COMPARE1A( void )
+        void SIG_OUTPUT_COMPARE0( void ) __attribute__ ( ( signal, naked ) );
+	void SIG_OUTPUT_COMPARE0( void )
 	{
 		vPortYieldFromTick();
 		asm volatile ( "reti" );
 	}
+        /* ----------------------- */
 #else
 
 	/*
@@ -486,11 +490,15 @@ uint8_t ucHighByte, ucLowByte;
 	 * tick count.  We don't need to switch context, this can only be done by
 	 * manual calls to taskYIELD();
 	 */
-	void SIG_OUTPUT_COMPARE1A( void ) __attribute__ ( ( signal ) );
-	void SIG_OUTPUT_COMPARE1A( void )
+	/* --- AAUSAT SPECIFIC --- */
+	//void SIG_OUTPUT_COMPARE1A( void ) __attribute__ ( ( signal ) );
+	//void SIG_OUTPUT_COMPARE1A( void )
+	void SIG_OUTPUT_COMPARE0( void ) __attribute__ ( ( signal ) );
+	void SIG_OUTPUT_COMPARE0( void )
 	{
 		xTaskIncrementTick();
 	}
+        /* ----------------------- */
 #endif
 
 
