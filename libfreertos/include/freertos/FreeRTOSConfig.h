@@ -107,6 +107,8 @@ extern unsigned long fcpu;
 #define configUSE_16_BIT_TICKS			1
 #define configIDLE_SHOULD_YIELD			0
 #define configQUEUE_REGISTRY_SIZE		0
+#define configSUPPORT_DYNAMIC_ALLOCATION	1
+#define configUSE_STATS_FORMATTING_FUNCTIONS	1
 
 /* Co-routine definitions. */
 #define configUSE_CO_ROUTINES 			0
@@ -122,6 +124,5 @@ to exclude the API function. */
 #define INCLUDE_vTaskSuspend			1
 #define INCLUDE_vTaskDelayUntil			1
 #define INCLUDE_vTaskDelay			1
-
 
 #endif /* FREERTOS_CONFIG_H */
