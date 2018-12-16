@@ -36,13 +36,13 @@ task.h is included from an application file. */
 #define MPU_WRAPPERS_INCLUDED_FROM_API_FILE
 
 /* Scheduler includes. */
-#include "FreeRTOS.h"
-#include "task.h"
-#include "queue.h"
-#include "timers.h"
-#include "event_groups.h"
-#include "stream_buffer.h"
-#include "mpu_prototypes.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
+#include <freertos/queue.h>
+#include <freertos/timers.h>
+#include <freertos/event_groups.h>
+#include <freertos/stream_buffer.h>
+#include <freertos/mpu_prototypes.h>
 
 #undef MPU_WRAPPERS_INCLUDED_FROM_API_FILE
 

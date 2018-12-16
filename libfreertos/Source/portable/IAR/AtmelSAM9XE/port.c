@@ -34,8 +34,8 @@
 #include <stdlib.h>
 
 /* Scheduler includes. */
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 
 /* Hardware includes. */
 #include <board.h>

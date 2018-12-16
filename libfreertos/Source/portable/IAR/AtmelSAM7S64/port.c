@@ -34,8 +34,8 @@
 #include <stdlib.h>
 
 /* Scheduler includes. */
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 
 /* Constants required to setup the initial stack. */
 #define portINITIAL_SPSR				( ( StackType_t ) 0x1f ) /* System mode, ARM mode, interrupts enabled. */

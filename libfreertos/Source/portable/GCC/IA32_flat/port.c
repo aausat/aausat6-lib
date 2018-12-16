@@ -29,8 +29,8 @@
 #include <limits.h>
 
 /* Scheduler includes. */
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 
 #if ( configUSE_PORT_OPTIMISED_TASK_SELECTION == 1 )
 	/* Check the configuration. */

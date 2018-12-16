@@ -25,8 +25,8 @@
  * 1 tab == 4 spaces!
  */
 
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 #include "mb91467d.h"
 
 /*-----------------------------------------------------------*/

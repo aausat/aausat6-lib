@@ -29,8 +29,8 @@
 #include <stdlib.h>
 
 /* Kernel includes. */
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 
 /* Machine includes */
 #include <machine/counter.h>

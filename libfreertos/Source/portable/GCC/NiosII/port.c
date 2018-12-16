@@ -39,8 +39,8 @@
 #include "priv/alt_irq_table.h"
 
 /* Scheduler includes. */
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 
 /* Interrupts are enabled. */
 #define portINITIAL_ESTATUS     ( StackType_t ) 0x01 

@@ -30,8 +30,8 @@
  *----------------------------------------------------------*/
 
 /* Scheduler includes. */
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 
 /* Library includes. */
 #include "string.h"

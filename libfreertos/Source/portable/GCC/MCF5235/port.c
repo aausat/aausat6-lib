@@ -53,9 +53,9 @@
 
 #include <stdlib.h>
 
-#include "FreeRTOS.h"
-#include "FreeRTOSConfig.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/FreeRTOSConfig.h>
+#include <freertos/task.h>
 
 /* ------------------------ Types ----------------------------------------- */
 typedef volatile uint32_t vuint32;

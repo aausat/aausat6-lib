@@ -38,8 +38,8 @@
 #include <stdlib.h>
 
 /* Scheduler includes. */
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 
 /* Processor constants. */
 #include "AT91SAM7X256.h"

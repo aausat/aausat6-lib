@@ -41,8 +41,8 @@
 
 
 /* Scheduler includes. */
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 
 /* Constants required to handle interrupts. */
 #define portCLEAR_AIC_INTERRUPT		( ( uint32_t ) 0 )

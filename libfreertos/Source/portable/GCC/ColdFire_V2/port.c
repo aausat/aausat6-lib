@@ -26,8 +26,8 @@
  */
 
 /* Kernel includes. */
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 
 #define portINITIAL_FORMAT_VECTOR		( ( StackType_t ) 0x4000 )
 

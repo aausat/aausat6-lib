@@ -27,7 +27,7 @@
 
 #include <xc.h>
 #include <sys/asm.h>
-#include "FreeRTOSConfig.h"
+#include <freertos/FreeRTOSConfig.h>
 #include "ISR_Support.h"
 
 	.extern pxCurrentTCB

@@ -26,7 +26,7 @@
  */
 
 /* FreeRTOS includes. */
-#include "FreeRTOSConfig.h"
+#include <freertos/FreeRTOSConfig.h>
 #include "ISR_Support.h"
 
 /* Microchip includes. */

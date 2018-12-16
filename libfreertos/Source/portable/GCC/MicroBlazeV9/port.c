@@ -31,8 +31,8 @@
 
 
 /* Scheduler includes. */
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 
 /* Standard includes. */
 #include <string.h>

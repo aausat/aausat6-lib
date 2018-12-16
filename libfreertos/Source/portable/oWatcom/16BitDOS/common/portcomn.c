@@ -45,7 +45,7 @@ Changes from V2.6.1:
 	
 
 #include <stdlib.h>
-#include "FreeRTOS.h"
+#include <freertos/FreeRTOS.h>
 
 /*-----------------------------------------------------------*/
 

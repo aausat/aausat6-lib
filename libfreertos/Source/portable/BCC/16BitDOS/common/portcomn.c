@@ -40,7 +40,7 @@ Changes from V2.6.1
 
 #include <dos.h>
 #include <stdlib.h>
-#include "FreeRTOS.h"
+#include <freertos/FreeRTOS.h>
 
 /*-----------------------------------------------------------*/
 

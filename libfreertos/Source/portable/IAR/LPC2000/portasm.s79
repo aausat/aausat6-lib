@@ -35,7 +35,7 @@
 	PUBLIC vPortYieldProcessor
 	PUBLIC vPortStartFirstTask
 
-#include "FreeRTOSConfig.h"
+#include <freertos/FreeRTOSConfig.h>
 #include "ISR_Support.h"
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

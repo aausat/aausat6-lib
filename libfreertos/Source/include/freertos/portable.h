@@ -42,7 +42,7 @@ Purely for reasons of backward compatibility the old method is still valid, but
 to make it clear that new projects should not use it, support for the port
 specific constants has been moved into the deprecated_definitions.h header
 file. */
-#include "deprecated_definitions.h"
+#include <freertos/deprecated_definitions.h>
 
 /* If portENTER_CRITICAL is not defined then including deprecated_definitions.h
 did not result in a portmacro.h header file being included - and it should be
@@ -88,7 +88,7 @@ must be set in the compiler's include path. */
 extern "C" {
 #endif
 
-#include "mpu_wrappers.h"
+#include <freertos/mpu_wrappers.h>
 
 /*
  * Setup the stack of a new task so it is ready to be placed under the

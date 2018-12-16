@@ -36,8 +36,8 @@
 #include <string.h>
 
 /* Scheduler include files. */
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 
 #if !defined(__PIC32MZ__)
     #error This port is designed to work with XC32 on PIC32MZ MCUs.  Please update your C compiler version or settings.
