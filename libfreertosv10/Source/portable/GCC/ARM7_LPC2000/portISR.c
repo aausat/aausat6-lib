@@ -52,7 +52,7 @@
 
 
 /* Scheduler includes. */
-#include "FreeRTOS.h"
+#include <freertos/FreeRTOS.h>
 
 /* Constants required to handle interrupts. */
 #define portTIMER_MATCH_ISR_BIT		( ( uint8_t ) 0x01 )

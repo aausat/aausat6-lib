@@ -26,7 +26,7 @@
  */
 
 /* FreeRTOS includes. */
-#include "FreeRTOSConfig.h"
+#include <freertos/FreeRTOSConfig.h>
 
 /* Xilinx library includes. */
 #include "microblaze_exceptions_g.h"

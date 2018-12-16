@@ -42,8 +42,8 @@
 #include <intrinsics.h>
 
 /* Scheduler includes. */
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 
 /* Constants required to setup the tick ISR. */
 #define portENABLE_TIMER			( ( uint8_t ) 0x01 )

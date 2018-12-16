@@ -33,8 +33,8 @@
 #include <string.h>
 
 /* Scheduler includes. */
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 
 /* Constants required to setup timer 2 to produce the RTOS tick. */
 #define portCLOCK_DIVISOR				( ( uint32_t ) 12 )

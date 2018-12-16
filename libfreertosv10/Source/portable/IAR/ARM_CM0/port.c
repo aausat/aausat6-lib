@@ -33,8 +33,8 @@
 #include "intrinsics.h"
 
 /* Scheduler includes. */
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 
 /* Constants required to manipulate the NVIC. */
 #define portNVIC_SYSTICK_CTRL			( ( volatile uint32_t * ) 0xe000e010 )

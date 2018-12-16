@@ -40,8 +40,8 @@
 */
 
 /* Scheduler includes. */
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 
 #include "AT91SAM7X256.h"
 

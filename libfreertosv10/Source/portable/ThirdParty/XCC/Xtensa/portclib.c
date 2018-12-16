@@ -22,7 +22,7 @@
 --------------------------------------------------------------------------------
 */
 
-#include "FreeRTOS.h"
+#include <freertos/FreeRTOS.h>
 
 #if XT_USE_THREAD_SAFE_CLIB
 
@@ -31,7 +31,7 @@
 #include <errno.h>
 #include <sys/reent.h>
 
-#include "semphr.h"
+#include <freertos/semphr.h>
 
 typedef SemaphoreHandle_t       _Rmtx;
 
@@ -134,7 +134,7 @@ _reclaim_reent(void * ptr)
 #include <stdlib.h>
 #include <string.h>
 
-#include "semphr.h"
+#include <freertos/semphr.h>
 
 static SemaphoreHandle_t xClibMutex;
 static uint32_t  ulClibInitDone = 0;

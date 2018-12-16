@@ -29,8 +29,8 @@
 #include <stdlib.h>
 
 /* Scheduler includes. */
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 
 /* Critical nesting should be initialised to a non zero value so interrupts don't
 accidentally get enabled before the scheduler is started. */

@@ -25,7 +25,7 @@
  * 1 tab == 4 spaces!
  */
 #include "msp430.h"
-#include "FreeRTOSConfig.h"
+#include <freertos/FreeRTOSConfig.h>
 #include "data_model.h"
 
 	IMPORT xTaskIncrementTick

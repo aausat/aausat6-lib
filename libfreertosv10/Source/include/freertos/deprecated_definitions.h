@@ -39,12 +39,12 @@ definitions below remain in the code for backward compatibility only.  New
 projects should not use them. */
 
 #ifdef OPEN_WATCOM_INDUSTRIAL_PC_PORT
-	#include "..\..\Source\portable\owatcom\16bitdos\pc\portmacro.h"
+	#include "../../Source/portable/owatcom/16bitdos/pc/portmacro.h"
 	typedef void ( __interrupt __far *pxISR )();
 #endif
 
 #ifdef OPEN_WATCOM_FLASH_LITE_186_PORT
-	#include "..\..\Source\portable\owatcom\16bitdos\flsh186\portmacro.h"
+	#include "../../Source/portable/owatcom/16bitdos/flsh186/portmacro.h"
 	typedef void ( __interrupt __far *pxISR )();
 #endif
 
@@ -93,7 +93,7 @@ projects should not use them. */
 #endif
 
 #ifdef IAR_MSP430
-	#include "..\..\Source\portable\IAR\MSP430\portmacro.h"
+	#include "../../Source/portable/IAR/MSP430/portmacro.h"
 #endif
 
 #ifdef GCC_MSP430
@@ -105,7 +105,7 @@ projects should not use them. */
 #endif
 
 #ifdef ARM7_LPC21xx_KEIL_RVDS
-	#include "..\..\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h"
+	#include "../../Source/portable/RVDS/ARM7_LPC21xx/portmacro.h"
 #endif
 
 #ifdef SAM7_GCC
@@ -113,31 +113,31 @@ projects should not use them. */
 #endif
 
 #ifdef SAM7_IAR
-	#include "..\..\Source\portable\IAR\AtmelSAM7S64\portmacro.h"
+	#include "../../Source/portable/IAR/AtmelSAM7S64/portmacro.h"
 #endif
 
 #ifdef SAM9XE_IAR
-	#include "..\..\Source\portable\IAR\AtmelSAM9XE\portmacro.h"
+	#include "../../Source/portable/IAR/AtmelSAM9XE/portmacro.h"
 #endif
 
 #ifdef LPC2000_IAR
-	#include "..\..\Source\portable\IAR\LPC2000\portmacro.h"
+	#include "../../Source/portable/IAR/LPC2000/portmacro.h"
 #endif
 
 #ifdef STR71X_IAR
-	#include "..\..\Source\portable\IAR\STR71x\portmacro.h"
+	#include "../../Source/portable/IAR/STR71x/portmacro.h"
 #endif
 
 #ifdef STR75X_IAR
-	#include "..\..\Source\portable\IAR\STR75x\portmacro.h"
+	#include "../../Source/portable/IAR/STR75x/portmacro.h"
 #endif
 
 #ifdef STR75X_GCC
-	#include "..\..\Source\portable\GCC\STR75x\portmacro.h"
+	#include "../../Source/portable/GCC/STR75x/portmacro.h"
 #endif
 
 #ifdef STR91X_IAR
-	#include "..\..\Source\portable\IAR\STR91x\portmacro.h"
+	#include "../../Source/portable/IAR/STR91x/portmacro.h"
 #endif
 
 #ifdef GCC_H8S
@@ -177,7 +177,7 @@ projects should not use them. */
 #endif
 
 #ifdef TERN_EE
-	#include "..\..\Source\portable\Paradigm\Tern_EE\small\portmacro.h"
+	#include "../../Source/portable/Paradigm/Tern_EE/small/portmacro.h"
 #endif
 
 #ifdef GCC_HCS12
@@ -205,14 +205,14 @@ projects should not use them. */
 #endif
 
 #ifdef _16FX_SOFTUNE
-	#include "..\..\Source\portable\Softune\MB96340\portmacro.h"
+	#include "../../Source/portable/Softune/MB96340/portmacro.h"
 #endif
 
 #ifdef BCC_INDUSTRIAL_PC_PORT
 	/* A short file name has to be used in place of the normal
 	FreeRTOSConfig.h when using the Borland compiler. */
 	#include "frconfig.h"
-	#include "..\portable\BCC\16BitDOS\PC\prtmacro.h"
+	#include "../portable/BCC/16BitDOS/PC/prtmacro.h"
     typedef void ( __interrupt __far *pxISR )();
 #endif
 
@@ -220,7 +220,7 @@ projects should not use them. */
 	/* A short file name has to be used in place of the normal
 	FreeRTOSConfig.h when using the Borland compiler. */
 	#include "frconfig.h"
-	#include "..\portable\BCC\16BitDOS\flsh186\prtmacro.h"
+	#include "../portable/BCC/16BitDOS/flsh186/prtmacro.h"
     typedef void ( __interrupt __far *pxISR )();
 #endif
 

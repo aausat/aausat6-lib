@@ -37,7 +37,7 @@
 extern "C" {
 #endif
 
-#include "task.h"
+#include <freertos/task.h>
 
 /**
  * Type by which queues are referenced.  For example, a call to xQueueCreate()

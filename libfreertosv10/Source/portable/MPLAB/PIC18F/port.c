@@ -55,11 +55,11 @@ Changes from V3.2.0
 */
 
 /* Scheduler include files. */
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 
 /* MPLAB library include file. */
-#include "timers.h"
+#include <freertos/timers.h>
 
 /*-----------------------------------------------------------
  * Implementation of functions defined in portable.h for the PIC port.

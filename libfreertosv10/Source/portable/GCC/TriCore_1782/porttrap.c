@@ -26,7 +26,7 @@
  */
 
 /* Kernel includes. */
-#include "FreeRTOS.h"
+#include <freertos/FreeRTOS.h>
 
 /* Machine includes */
 #include <tc1782.h>

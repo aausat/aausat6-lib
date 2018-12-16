@@ -47,8 +47,8 @@ Changes from V2.6.1
 #include <stdlib.h>
 #include <setjmp.h>
 
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 #include "portasm.h"
 
 /*lint -e950 Non ANSI reserved words okay in this file only. */

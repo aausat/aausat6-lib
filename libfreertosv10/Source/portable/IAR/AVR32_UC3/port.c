@@ -41,8 +41,8 @@
 
 
 /* Scheduler includes. */
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 
 /* AVR32 UC3 includes. */
 #include <avr32/io.h>

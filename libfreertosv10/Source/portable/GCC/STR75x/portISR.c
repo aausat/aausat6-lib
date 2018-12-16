@@ -36,8 +36,8 @@
 */
 
 /* Scheduler includes. */
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 
 /* Constants required to handle critical sections. */
 #define portNO_CRITICAL_NESTING		( ( uint32_t ) 0 )

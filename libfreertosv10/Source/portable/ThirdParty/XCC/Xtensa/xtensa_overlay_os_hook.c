@@ -22,8 +22,8 @@
 // SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-#include "FreeRTOS.h"
-#include "semphr.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/semphr.h>
 
 #if configUSE_MUTEX
 

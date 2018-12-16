@@ -28,8 +28,8 @@
 /* GCC/HCS12 port by Jefferson L Smith, 2005 */
 
 /* Scheduler includes. */
-#include "FreeRTOS.h"
-#include "task.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 
 /* Port includes */
 #include <sys/ports_def.h>
