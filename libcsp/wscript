@@ -50,7 +50,7 @@ def options(ctx):
     gr.add_option('--enable-examples', action='store_true', help='Enable examples')
     gr.add_option('--enable-dedup', action='store_true', help='Enable packet deduplicator')
 
-    gr.add_option('--hard-float', action='store_true', help="Enable hardware float compile flags")
+    gr.add_option('--m4', action='store_true', help="Enable hardware float compile flags")
 
     # Interfaces    
     gr.add_option('--enable-if-i2c', action='store_true', help='Enable I2C interface')
@@ -112,8 +112,8 @@ def configure(ctx):
     if (len(ctx.env.CFLAGS) == 0):
         ctx.env.prepend_value('CFLAGS', ['-Os','-Wall', '-g', '-std=gnu99'])
 
-    if ctx.options.hard_float:
-        ctx.env.prepend_value('CFLAGS', ['-mfloat-abi=hard', '-mfpu=fpv4-sp-d16' ])
+    if ctx.options.m4:
+        ctx.env.prepend_value('CFLAGS', ['-mfloat-abi=hard', '-mfpu=fpv4-sp-d16', '-mthumb', '-mcpu=cortex-m4' ])
 
     # Setup extra includes
     ctx.env.append_unique('INCLUDES_CSP', ['include'] + ctx.options.includes.split(','))
