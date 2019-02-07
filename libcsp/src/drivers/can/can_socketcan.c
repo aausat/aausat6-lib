@@ -93,7 +93,7 @@ static void * socketcan_rx_thread(void * parameters)
 	pthread_exit(NULL);
 }
 
-int can_send(can_id_t id, uint8_t data[], uint8_t dlc)
+int csp_can_driver_send(can_id_t id, uint8_t data[], uint8_t dlc)
 {
 	struct can_frame frame;
 	int i, tries = 0;
@@ -125,7 +125,7 @@ int can_send(can_id_t id, uint8_t data[], uint8_t dlc)
 	return 0;
 }
 
-int can_init(uint32_t id, uint32_t mask, struct csp_can_config *conf)
+int csp_can_driver_init(uint32_t id, uint32_t mask, struct csp_can_config *conf)
 {
 	struct ifreq ifr;
 	struct sockaddr_can addr;
