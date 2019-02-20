@@ -1,4 +1,4 @@
 [submodule "libcsp"]
 	path = libcsp
 	url = git@github.com:aausat/libcsp.git
-	branch = master
+	branch = aausat6
