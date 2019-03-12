@@ -2,7 +2,6 @@
 	path = libcsp
 	url = git@github.com:aausat/libcsp.git
 	branch = aausat6
-
 [submodule "libopencm3"]
 	path = libopencm3
 	url = https://github.com/libopencm3/libopencm3.git
